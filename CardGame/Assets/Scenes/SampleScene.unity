@@ -331,15 +331,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6326189bd6504fd4db4eabcfdd6abffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handCard1: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
+  p1_handCard1: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
     type: 3}
-  handCard2: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
+  p1_handCard2: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
     type: 3}
-  handCard3: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
+  p1_handCard3: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
     type: 3}
-  handCardPosition1: 00000000e0ffffffecffffff
-  handCardPosition2: 0a000000e0ffffffecffffff
-  handCardPosition3: f6ffffffe0ffffffecffffff
+  p2_handCard1: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
+    type: 3}
+  p2_handCard2: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
+    type: 3}
+  p2_handCard3: {fileID: 3762890481594540015, guid: 7da71b7a125f2ed4fb7c717fd6f8bc0b,
+    type: 3}
+  p1_handCardPosition1: {x: 0, y: -32, z: -20}
+  p1_handCardPosition2: {x: 10, y: -32, z: -20}
+  p1_handCardPosition3: {x: -10, y: -32, z: -20}
+  p2_handCardPosition1: {x: 0, y: 32, z: -20}
+  p2_handCardPosition2: {x: -10, y: 32, z: -20}
+  p2_handCardPosition3: {x: 10, y: 32, z: -20}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

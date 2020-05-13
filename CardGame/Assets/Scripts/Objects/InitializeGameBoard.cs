@@ -5,21 +5,36 @@ using UnityEngine;
 
 public class InitializeGameBoard : MonoBehaviour
 {
-    public GameObject handCard1;
-    public GameObject handCard2;
-    public GameObject handCard3;
+    #region PlayerDeckVariables
+    
+    #endregion
+    #region PlayerHandCardVariables
+    public GameObject p1_handCard1;
+    public GameObject p1_handCard2;
+    public GameObject p1_handCard3;
+    public GameObject p2_handCard1;
+    public GameObject p2_handCard2;
+    public GameObject p2_handCard3;
+    #endregion
+    public Vector3 p1_handCardPosition1 = new Vector3 ( 0, -32, -20 );
+    public Vector3 p1_handCardPosition2 = new Vector3 ( 10, -32, -20 );
+    public Vector3 p1_handCardPosition3 = new Vector3 ( -10, -32, -20 );
 
-    public int[] handCardPosition1 = new int[3] { 0, -32, -20};
-    public int[] handCardPosition2 = new int[3] { 10, -32, -20};
-    public int[] handCardPosition3 = new int[3] { -10, -32, -20};
+    public Vector3 p2_handCardPosition1 = new Vector3 ( 0, 32, -20 );
+    public Vector3 p2_handCardPosition2 = new Vector3 ( -10, 32, -20 );
+    public Vector3 p2_handCardPosition3 = new Vector3 ( 10, 32, -20 );
 
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(handCard1, new Vector3(handCardPosition1[0], handCardPosition1[1], handCardPosition1[2]), Quaternion.identity);
-        Instantiate(handCard2, new Vector3(handCardPosition2[0], handCardPosition2[1], handCardPosition2[2]), Quaternion.identity);
-        Instantiate(handCard3, new Vector3(handCardPosition3[0], handCardPosition3[1], handCardPosition3[2]), Quaternion.identity);
-        
+        Instantiate(p1_handCard1, p1_handCardPosition1, Quaternion.identity, GameObject.Find("P1_HandCards").transform);
+        Instantiate(p1_handCard2, p1_handCardPosition2, Quaternion.identity, GameObject.Find("P1_HandCards").transform);
+        Instantiate(p1_handCard3, p1_handCardPosition3, Quaternion.identity, GameObject.Find("P1_HandCards").transform);
+
+        Instantiate(p2_handCard1, p2_handCardPosition1, Quaternion.identity, GameObject.Find("P2_HandCards").transform);
+        Instantiate(p2_handCard2, p2_handCardPosition2, Quaternion.identity, GameObject.Find("P2_HandCards").transform);
+        Instantiate(p2_handCard3, p2_handCardPosition3, Quaternion.identity, GameObject.Find("P2_HandCards").transform);
+
     }
 
     // Update is called once per frame
