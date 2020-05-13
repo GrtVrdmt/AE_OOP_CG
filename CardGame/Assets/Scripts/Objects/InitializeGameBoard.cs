@@ -19,6 +19,7 @@ public class InitializeGameBoard : MonoBehaviour
         Instantiate(handCard1, new Vector3(handCardPosition1[0], handCardPosition1[1], handCardPosition1[2]), Quaternion.identity);
         Instantiate(handCard2, new Vector3(handCardPosition2[0], handCardPosition2[1], handCardPosition2[2]), Quaternion.identity);
         Instantiate(handCard3, new Vector3(handCardPosition3[0], handCardPosition3[1], handCardPosition3[2]), Quaternion.identity);
+        
     }
 
     // Update is called once per frame
