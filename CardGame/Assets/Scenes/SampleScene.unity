@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 103266419}
   - component: {fileID: 103266420}
   m_Layer: 0
-  m_Name: FieldCards
+  m_Name: P1_FieldCards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 567034722}
   m_Layer: 0
-  m_Name: 'DeckCards '
+  m_Name: 'P2_DeckCards '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 747126629}
   - component: {fileID: 747126630}
   m_Layer: 0
-  m_Name: 'CardStorage '
+  m_Name: P2_FieldCards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,7 +483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1220316521}
   m_Layer: 0
-  m_Name: HandCards
+  m_Name: P1_HandCards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,7 +641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1863342821}
   m_Layer: 0
-  m_Name: 'HandCards '
+  m_Name: 'P2_HandCards '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,7 +671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1882758072}
   m_Layer: 0
-  m_Name: DeckCards
+  m_Name: P1_DeckCards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
