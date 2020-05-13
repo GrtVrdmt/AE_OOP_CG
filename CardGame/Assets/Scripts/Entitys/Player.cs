@@ -12,7 +12,7 @@ namespace Assets.Ressources
         private int hp;
         private int mana;
         private const int maxMana = 10;
-        public Player(int maxHp, int mana)
+        public Player(int maxHp, int hp, int mana)
         {
             SetMaxHp(maxHp);
             SetHp(GetMaxHp());
