@@ -46,8 +46,8 @@ public class GameCard : MonoBehaviour
 
     private void UpdateValues()
     {
-        this.AttackLabel.GetComponent<TextMesh>().text = "A: " + this.Attack.ToString();
-        this.DefenseLabel.GetComponent<TextMesh>().text = "D: " + this.Defense.ToString();
+        this.AttackLabel.GetComponent<TextMesh>().text = this.Attack.ToString();
+        this.DefenseLabel.GetComponent<TextMesh>().text = this.Defense.ToString();
 
     }
 }
