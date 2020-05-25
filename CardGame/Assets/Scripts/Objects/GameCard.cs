@@ -29,7 +29,14 @@ public class GameCard : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(this.transform.parent.parent.Find("FieldCards").childCount == 3)
+        {
+
+        }
+        else
+        {
         var temp = this.transform.parent.parent.Find("FieldCards");
         this.transform.parent = temp.transform;
+        }
     }
 }
