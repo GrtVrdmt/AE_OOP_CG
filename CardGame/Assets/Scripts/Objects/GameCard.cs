@@ -11,6 +11,10 @@ public class GameCard : MonoBehaviour
 
     public int Defense;
 
+    private GameObject AttackLabel;
+
+    private GameObject DefenseLabel;
+
     //Start is called before the first frame update
     void Start()
     {
@@ -19,6 +23,13 @@ public class GameCard : MonoBehaviour
         Name = temp.Name;
         Attack = temp.Attack;
         Defense = temp.Defense;
+
+        //Get reference to Attack and Defense Labels
+        AttackLabel = transform.Find("AttackLabel").gameObject;
+        DefenseLabel = transform.Find("DefenseLabel").gameObject;
+
+        UpdateValues();
+
     }
 
     // Update is called once per frame
@@ -31,5 +42,12 @@ public class GameCard : MonoBehaviour
     {
         var temp = this.transform.parent.parent.Find("FieldCards");
         this.transform.parent = temp.transform;
+    }
+
+    private void UpdateValues()
+    {
+        this.AttackLabel.GetComponent<TextMesh>().text = this.Attack.ToString();
+        this.DefenseLabel.GetComponent<TextMesh>().text = this.Defense.ToString();
+
     }
 }
