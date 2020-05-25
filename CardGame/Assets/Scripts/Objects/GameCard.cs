@@ -29,8 +29,7 @@ public class GameCard : MonoBehaviour
 
     private void OnMouseDown()
     {
-        var temp = GameObject.Find("P1_FieldCards");
+        var temp = this.transform.parent.parent.Find("FieldCards");
         this.transform.parent = temp.transform;
-        var temp2 = this.transform.parent;
     }
 }

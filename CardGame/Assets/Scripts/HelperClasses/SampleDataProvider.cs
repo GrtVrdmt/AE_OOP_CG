@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Assets.Scripts.Entitys;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine.VR;
+using Random = UnityEngine.Random;
 
 namespace Assets.Ressources
 {
@@ -26,9 +28,18 @@ namespace Assets.Ressources
 
         public Card GetRandomCard()
         {
-            var random = new Random();
-            int index = random.Next(CardList.Count());
-            return CardList[index];
+            return CardList[Random.Range(0, 5)];
+        }
+
+        public Deck GetRandomDeck()
+        {
+            List<Card> cardList = new List<Card>();
+            for(var i = 0; i < 4; i++)
+            {
+                cardList.Add(GetRandomCard());
+            }
+            Deck newDeck = new Deck("test", cardList);
+            return newDeck;
         }
     }
 }
