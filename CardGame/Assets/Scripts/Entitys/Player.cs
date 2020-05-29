@@ -14,6 +14,7 @@ namespace Assets.Ressources
         private const int maxMana = 10;
         public Player(int maxHp, int mana)
         {
+            
             SetMaxHp(maxHp);
             SetHp(GetMaxHp());
             SetMana(mana);
@@ -48,6 +49,9 @@ namespace Assets.Ressources
             hp += amount;
             if (hp > maxHp)
                 hp = maxHp;
+            if (hp <= 0)
+                //Game Lost
+                return;
         }
 
         public int GetMana()
