@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SortFieldCards : MonoBehaviour
 {
-    public Vector3 p1_fieldCardPosition_1 = new Vector3( 0, -8, -20);
-    public Vector3 p1_fieldCardPosition_2 = new Vector3( 10, -8, -20);
-    public Vector3 p1_fieldCardPosition_3 = new Vector3( -10, -8, -20);
+    public Vector3 p1_fieldCardPosition_1 = new Vector3( 0, -80, -20);
+    public Vector3 p1_fieldCardPosition_2 = new Vector3( 100, -80, -20);
+    public Vector3 p1_fieldCardPosition_3 = new Vector3( -100, -80, -20);
                                        
-    public Vector3 p2_fieldCardPosition_1 = new Vector3( 0, 8, -20);
-    public Vector3 p2_fieldCardPosition_2 = new Vector3( -10, 8, -20);
-    public Vector3 p2_fieldCardPosition_3 = new Vector3( 10, 8, -20);
+    public Vector3 p2_fieldCardPosition_1 = new Vector3( 0, 80, -20);
+    public Vector3 p2_fieldCardPosition_2 = new Vector3( -100, 80, -20);
+    public Vector3 p2_fieldCardPosition_3 = new Vector3( 100, 80, -20);
     // Start is called before the first frame update
     void Start()
     {

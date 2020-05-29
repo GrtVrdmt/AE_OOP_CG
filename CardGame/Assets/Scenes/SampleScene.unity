@@ -164,12 +164,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14934ae3ad1a9a42a494c9018b6d7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1_fieldCardPosition_1: {x: 0, y: -8, z: -20}
-  p1_fieldCardPosition_2: {x: 10, y: -8, z: -20}
-  p1_fieldCardPosition_3: {x: -10, y: -8, z: -20}
-  p2_fieldCardPosition_1: {x: 0, y: 8, z: -20}
-  p2_fieldCardPosition_2: {x: -10, y: 8, z: -20}
-  p2_fieldCardPosition_3: {x: 10, y: 8, z: -20}
+  p1_fieldCardPosition_1: {x: 0, y: -80, z: -20}
+  p1_fieldCardPosition_2: {x: 100, y: -80, z: -20}
+  p1_fieldCardPosition_3: {x: -100, y: -80, z: -20}
+  p2_fieldCardPosition_1: {x: 0, y: 80, z: -20}
+  p2_fieldCardPosition_2: {x: -100, y: 80, z: -20}
+  p2_fieldCardPosition_3: {x: 100, y: 80, z: -20}
 --- !u!1 &157310123
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 50.20649
+  orthographic size: 502.8565
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -530,6 +530,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529901752}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &731847496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731847499}
+  - component: {fileID: 731847498}
+  - component: {fileID: 731847497}
+  m_Layer: 5
+  m_Name: Example 2 - Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &731847497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731847496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3160377, g: 1, b: 0.9523671, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8ef8bbf13f603204a8ea885c81de6186, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 200
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Player 1 Turn
+--- !u!222 &731847498
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731847496}
+  m_CullTransparentMesh: 0
+--- !u!224 &731847499
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731847496}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 904340305}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.00000011920929, y: 0.200957}
+  m_AnchorMax: {x: 1.0000001, y: 0.3484305}
+  m_AnchoredPosition: {x: 0.000061035156, y: 225.73}
+  m_SizeDelta: {x: 0, y: -15.8}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &747126628
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,12 +650,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14934ae3ad1a9a42a494c9018b6d7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1_fieldCardPosition_1: {x: 0, y: -8, z: -20}
-  p1_fieldCardPosition_2: {x: 10, y: -8, z: -20}
-  p1_fieldCardPosition_3: {x: -10, y: -8, z: -20}
-  p2_fieldCardPosition_1: {x: 0, y: 8, z: -20}
-  p2_fieldCardPosition_2: {x: -10, y: 8, z: -20}
-  p2_fieldCardPosition_3: {x: 10, y: 8, z: -20}
+  p1_fieldCardPosition_1: {x: 0, y: -80, z: -20}
+  p1_fieldCardPosition_2: {x: 100, y: -80, z: -20}
+  p1_fieldCardPosition_3: {x: -100, y: -80, z: -20}
+  p2_fieldCardPosition_1: {x: 0, y: 80, z: -20}
+  p2_fieldCardPosition_2: {x: -100, y: 80, z: -20}
+  p2_fieldCardPosition_3: {x: 100, y: 80, z: -20}
+--- !u!1 &904340300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 904340305}
+  - component: {fileID: 904340304}
+  - component: {fileID: 904340303}
+  - component: {fileID: 904340302}
+  - component: {fileID: 904340301}
+  m_Layer: 5
+  m_Name: Example 0 (Script)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &904340301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904340300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4f52301f773d041898892669df52d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - text: {fileID: 0}
+    minAlpha: 0.4
+    maxAlpha: 0.8
+    timerAlpha: 1
+  - text: {fileID: 0}
+    minAlpha: 0.7
+    maxAlpha: 0.9
+    timerAlpha: 0.5
+  - text: {fileID: 731847497}
+    minAlpha: 0.2
+    maxAlpha: 1.2
+    timerAlpha: 2
+  HelpURL: nvjob.github.io/unity/alpha-flashing-text
+  ReportAProblem: nvjob.github.io/support
+  Patrons: nvjob.github.io/patrons
+--- !u!114 &904340302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904340300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &904340303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904340300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &904340304
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904340300}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &904340305
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904340300}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_Children:
+  - {fileID: 731847499}
+  m_Father: {fileID: 2128030651}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0831, y: 0.2}
+  m_SizeDelta: {x: 1567.6989, y: 1001.8729}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1220316520
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,12 +827,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f5985de556c6f4891c402a56de97ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1_handCardPosition_1: {x: 0, y: -32, z: -20}
-  p1_handCardPosition_2: {x: 10, y: -32, z: -20}
-  p1_handCardPosition_3: {x: -10, y: -32, z: -20}
-  p2_handCardPosition_1: {x: 0, y: 32, z: -20}
-  p2_handCardPosition_2: {x: -10, y: 32, z: -20}
-  p2_handCardPosition_3: {x: 10, y: 32, z: -20}
+  p1_handCardPosition_1: {x: 0, y: -320, z: -20}
+  p1_handCardPosition_2: {x: 100, y: -320, z: -20}
+  p1_handCardPosition_3: {x: -100, y: -320, z: -20}
+  p2_handCardPosition_1: {x: 0, y: 320, z: -20}
+  p2_handCardPosition_2: {x: -100, y: 320, z: -20}
+  p2_handCardPosition_3: {x: 100, y: 320, z: -20}
 --- !u!1 &1447198709
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,12 +1129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f5985de556c6f4891c402a56de97ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1_handCardPosition_1: {x: 0, y: -32, z: -20}
-  p1_handCardPosition_2: {x: 10, y: -32, z: -20}
-  p1_handCardPosition_3: {x: -10, y: -32, z: -20}
-  p2_handCardPosition_1: {x: 0, y: 32, z: -20}
-  p2_handCardPosition_2: {x: -10, y: 32, z: -20}
-  p2_handCardPosition_3: {x: 10, y: 32, z: -20}
+  p1_handCardPosition_1: {x: 0, y: -320, z: -20}
+  p1_handCardPosition_2: {x: 100, y: -320, z: -20}
+  p1_handCardPosition_3: {x: -100, y: -320, z: -20}
+  p2_handCardPosition_1: {x: 0, y: 320, z: -20}
+  p2_handCardPosition_2: {x: -100, y: 320, z: -20}
+  p2_handCardPosition_3: {x: 100, y: 320, z: -20}
 --- !u!1 &2103351739
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,8 +1160,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103351739}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0012, y: 0.001, z: 0}
-  m_LocalScale: {x: 0.026101723, y: 0.04655857, z: 1}
+  m_LocalPosition: {x: -0.001174, y: -0.000912, z: 0}
+  m_LocalScale: {x: 0.02610305, y: 0.046381555, z: 1}
   m_Children: []
   m_Father: {fileID: 1764162875}
   m_RootOrder: 0
@@ -1036,11 +1241,12 @@ Transform:
   m_GameObject: {fileID: 2128030650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 1764162875}
   - {fileID: 1447198710}
   - {fileID: 390449644}
+  - {fileID: 904340305}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

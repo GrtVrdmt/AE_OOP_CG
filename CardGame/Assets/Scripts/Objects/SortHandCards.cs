@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SortHandCards : MonoBehaviour
 {
-    public Vector3 p1_handCardPosition_1 = new Vector3(0, -32, -20);
-    public Vector3 p1_handCardPosition_2 = new Vector3(10, -32, -20);
-    public Vector3 p1_handCardPosition_3 = new Vector3(-10, -32, -20);
+    public Vector3 p1_handCardPosition_1 = new Vector3(0, -320, -20);
+    public Vector3 p1_handCardPosition_2 = new Vector3(100, -320, -20);
+    public Vector3 p1_handCardPosition_3 = new Vector3(-100, -320, -20);
                                       
-    public Vector3 p2_handCardPosition_1 = new Vector3(0, 32, -20);
-    public Vector3 p2_handCardPosition_2 = new Vector3(-10, 32, -20);
-    public Vector3 p2_handCardPosition_3 = new Vector3(10, 32, -20);
+    public Vector3 p2_handCardPosition_1 = new Vector3(0, 320, -20);
+    public Vector3 p2_handCardPosition_2 = new Vector3(-100, 320, -20);
+    public Vector3 p2_handCardPosition_3 = new Vector3(100, 320, -20);
     // Start is called before the first frame update
     void Start()
     {
