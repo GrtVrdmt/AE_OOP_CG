@@ -7,6 +7,8 @@ using UnityEngine;
 public class GameDeck : MonoBehaviour
 {
     public List<GameObject> CardList;
+
+    private bool PlayerOneDeck;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,11 @@ public class GameDeck : MonoBehaviour
                 Instantiate(CardList[i], this.transform);
             }
         }
+
+        if (this.transform.parent.name == "Player1")
+            PlayerOneDeck = true;
+        else
+            PlayerOneDeck = false;
     }
 
     // Update is called once per frame
@@ -33,15 +40,19 @@ public class GameDeck : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        var temp = this.transform.GetChild(0);
-        if (this.transform.parent.Find("HandCards").childCount >= 3)
+        if (GameLogic.PlayerOneTurn == PlayerOneDeck && this.transform.childCount != 0)
         {
-            Destroy(temp.gameObject);
-        }
-        else
-        {
-            temp.transform.parent = this.transform.parent.Find("HandCards");
+            var temp = this.transform.GetChild(0);
+            if (this.transform.parent.Find("HandCards").childCount >= 3)
+            {
+                Destroy(temp.gameObject);
+                GameLogic.ActionsDonePerTurn += 1;
+            }
+            else
+            {
+                temp.transform.parent = this.transform.parent.Find("HandCards");
+                GameLogic.ActionsDonePerTurn += 1;
+            }
         }
     }
-
 }

@@ -15,6 +15,10 @@ public class GameCard : MonoBehaviour
 
     private GameObject DefenseLabel;
 
+    private bool PlayerOneCard;
+
+    public bool IsActive = false;
+
     //Start is called before the first frame update
     void Start()
     {
@@ -30,24 +34,51 @@ public class GameCard : MonoBehaviour
 
         UpdateValues();
 
+        if (this.transform.parent.parent.name == "Player1")
+            PlayerOneCard = true;
+        else
+            PlayerOneCard = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Defense == 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnMouseDown()
     {
-        if (this.transform.parent.parent.Find("FieldCards").childCount == 3)
+        if (GameLogic.PlayerOneTurn == PlayerOneCard && IsActive == false && GameLogic.CurrentPlayerAttacks == false)
         {
-
+            if (this.transform.parent.parent.Find("FieldCards").childCount == 3 && this.transform.parent.name == "HandCards")
+            {
+                
+            }
+            else if (this.transform.parent.name == "FieldCards")
+            {
+                GameLogic.CurrentPlayerAttacks = !GameLogic.CurrentPlayerAttacks;
+                IsActive = true;
+                GameLogic.AttackerCard = this;
+            }
+            else
+            {
+                var temp = this.transform.parent.parent.Find("FieldCards");
+                this.transform.parent = temp.transform;
+                GameLogic.ActionsDonePerTurn += 1;
+            }
         }
-        else
+        else if (GameLogic.PlayerOneTurn != PlayerOneCard && GameLogic.CurrentPlayerAttacks == true && this.transform.parent.name == "FieldCards")
         {
-            var temp = this.transform.parent.parent.Find("FieldCards");
-            this.transform.parent = temp.transform;
+            GameLogic.DefenderCard = this;
+            GameLogic.Battle();
+        }
+        else if (IsActive == true)
+        {
+            IsActive = false;
+            GameLogic.CurrentPlayerAttacks = false;
         }
     }
 

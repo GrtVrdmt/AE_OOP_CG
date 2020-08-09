@@ -34,7 +34,7 @@ namespace Assets.Ressources
         public Deck GetRandomDeck()
         {
             List<Card> cardList = new List<Card>();
-            for(var i = 0; i < 4; i++)
+            for(var i = 0; i < 5; i++)
             {
                 cardList.Add(GetRandomCard());
             }
